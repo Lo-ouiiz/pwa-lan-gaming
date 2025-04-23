@@ -57,7 +57,7 @@ function Register() {
   );
   const [levels, setLevels] = useState<string[]>([]);
   const [promos, setPromos] = useState<string[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchLevels = async () => {
@@ -257,8 +257,8 @@ function Register() {
       <h1 className="pageTitle">Inscription</h1>
       <Card>
         <div className="register-container">
-        <InfoTournament isRegistration={true} />
-      
+          <InfoTournament isRegistration={true} />
+
           <div className="register-form">
             <h2>Equipe</h2>
             <form className="player-form">
